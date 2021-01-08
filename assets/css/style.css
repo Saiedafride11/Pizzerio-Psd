@@ -1,0 +1,620 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1.h2,h3,h4,h5,h6,p{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	
+	text-decoration: none;
+}
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.container{
+	max-width: 1210px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 25px;
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/Lato/Lato-Regular.eot');
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato-Regular.ttf') format('truetype'),
+        url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('../fonts/Lato/Lato-Black.eot');
+    src: url('../fonts/Lato/Lato-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Black.woff2') format('woff2'),
+        url('../fonts/Lato/Lato-Black.woff') format('woff'),
+        url('../fonts/Lato/Lato-Black.ttf') format('truetype'),
+        url('../fonts/Lato/Lato-Black.svg#Lato-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat/Montserrat-Medium.eot');
+    src: url('../fonts/Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Medium.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('../fonts/Montserrat/Montserrat-Black.eot');
+    src: url('../fonts/Montserrat/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat/Montserrat-Black.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Black.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Black.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat-Black.svg#Montserrat-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+/* =============================================
+			  Start Heading Section                 
+================================================= */
+.header-section{
+	width: 100%;
+	padding: 0px 0px 200px;
+	background-image: url(../images/banner-bg.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+}
+.header-section .header{
+	width: 100%;
+}
+.header-section .header .header-left{
+	width: 30%;
+	float: left;
+	margin-left: -125px;
+}
+.header-section .header .header-left img{
+	margin-top: 20px;
+}
+.header-section .header .header-right{
+	width: 70%;
+	float: left;
+}
+.header-section .header .header-right ul{
+	text-align: center;
+	margin-top: 30px;
+}
+.header-section .header .header-right ul li {
+	display: inline;
+}
+.header-section .header .header-right ul li a{
+	text-decoration: none;
+	text-transform: capitalize;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	font-family: 'Lato-Regular';
+	font-size: 20px;
+	font-weight: 400;
+}
+.header-section .header .header-right ul li a:hover, .header-section .header .header-right ul li a:focus{
+	background: #ffba00;
+	color: #242424;
+}
+/* banner */
+.banner-section{
+	width: 100%;
+	padding:10px 0px;
+	margin-top: 200px;
+	background-color: #ffba00;
+}
+.banner-section .banner-left{
+	width: 50%;
+	float: left;
+}
+.banner-section .banner-left h1{
+	font-size: 70px;
+	line-height: 60px;
+	font-weight: 700;
+	color: #fff;
+	font-family: 'Montserrat-Black';
+}
+
+.banner-section .banner-right{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.banner-section .banner-right .banner-right-btn{
+	margin-top: 50px;
+}
+.banner-section .banner-right .banner-btn{
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 22px;
+	color: #fff;
+	padding: 10px 30px;
+	background-color: #ffba00;
+	border: 2px solid #fff;
+	font-family: 'Montserrat-Medium';
+}
+.banner-section .banner-right .banner-btn:hover{
+	border: 2px solid transparent;
+	background-color: #242424;
+	color: #fff;
+}
+/* =============================================
+			  End Heading Section                 
+================================================= */
+
+/* =============================================
+			 Start new Section                 
+================================================= */
+.new-section{
+	width: 100%;
+	padding: 80px 0px;
+	background-color: #242424;
+	background-image: url(../images/new-bg.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: 40% 70%;
+}
+.new-section .new{
+	width: 100%;
+}
+
+.new-section .new h3{
+	font-size: 30px;
+	font-weight: 500;
+	letter-spacing: 7px;
+	color: #fff;
+	font-family: 'Lato-Black';
+	margin-left: 60px;
+}
+.new-section .new .new-inner{
+	width: 70%;
+	height: 150px;
+	background: #ffba00;
+	display: flex;
+	align-items: center;
+}
+.new-section .new .new-inner h4{
+	font-size: 22px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Lato-Black';
+	margin-left: 60px;
+}
+.new-section .new h4{
+	font-size: 22px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Lato-Black';
+	margin-left: 60px;
+	margin-top: 20px;
+}
+/* =============================================
+			 End new Section                 
+================================================= */
+
+/* =============================================
+			 start three-items Section                 
+================================================= */
+.three-items-section{
+	width: 100%;
+	padding: 80px 0px;
+}
+.three-items-section .three-items{
+	width: 100%;
+}
+.three-items-section .three-items .three-items-inner{
+	width: 33.33%;
+	float: left;
+}
+.three-items-section .three-items .three-items-inner h4{
+	font-size: 22px;
+	font-weight: 400;
+	color: #ffba00;
+	font-family: 'Montserrat-Black';
+}
+.three-items-section .three-items .three-items-inner p{
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #242424;
+	font-family: 'Lato-Regular';
+	margin-top: 20px;
+}
+/* =============================================
+			 End three-items Section                 
+================================================= */
+
+/* =============================================
+			 Start menu Section                 
+================================================= */
+.menu-section{
+	width: 100%;
+	background-image: url(../images/menu-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	padding-bottom: 50px;
+}
+.menu-main-title{}
+.menu-main-title h3{
+	font-size: 30px;
+	font-weight: 700;
+	color: #ffba00;
+	font-family: 'Montserrat-Regular';
+	text-align: center;
+	padding-top: 80px;
+}
+.menu-title{
+	width: 80%;
+	height: 60px;
+	float: right;
+	border: 2px solid #fff;
+	margin-top: 40px;
+}
+.menu-title h4{
+	font-size: 25px;
+	font-weight: 400;
+	color: #ffba00;
+	font-family: 'Montserrat-Medium';
+	text-align: center;
+	margin-left: -270px;
+	margin-top: 10px;
+}
+/* menu-background */
+.menu-background{
+	width: 70%;
+	float: right;
+	height: 350px;
+	background: #ffba00;
+	margin-top: 100px;
+}
+.menu-background-details{
+	width: 80%;
+}
+.menu-background-details h3{
+	float: left;
+	font-size: 22px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.menu-background .menu-background-details .text-right{
+	float: right;
+	font-weight: bold;
+}
+/* menu-last */
+.menu-last{
+	width: 80%;
+	height: 150px;
+	margin: 0 auto;
+	border: 2px solid #fff;
+	margin-top: 150px;
+}
+.menu-last ul{
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	margin-left: 300px;
+	margin-top: 25px;
+}
+
+/* =============================================
+			 End menu Section                 
+================================================= */
+
+/* =============================================
+			 Start-concept-section               
+================================================= */
+.concept-section{
+	width: 100%;
+	padding: 80px 0px;
+	background-color: #242424;
+	text-align: center;
+}
+.concept-section .concept{
+	width: 100%;
+}
+.concept-section .concept h2{
+	font-size: 35px;
+	font-weight: 700;
+	color: #ffba00;
+	font-family: 'Montserrat-Regular';
+}
+.concept-section .concept p{
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	margin-top: 30px;
+}
+.concept-section .concept ul{
+	text-align: center;
+	margin-top: 30px;
+}
+.concept-section .concept ul li {
+	display: inline;
+}
+.concept-section .concept ul li a{
+	text-decoration: none;
+	text-transform: capitalize;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	font-size: 20px;
+	font-weight: 400;
+}
+.concept-section .concept ul li a:hover{
+	background: #ffba00;
+	color: #242424;
+}
+/* =============================================
+			 End-concept-section               
+================================================= */
+
+/* =============================================
+			Start MasterClass-section               
+================================================= */
+.MasterClass-section{
+	width: 100%;
+	padding:0px 0px 150px;
+	background-image: url(../images/masterclass-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+.MasterClass-section .MasterClass{
+	width: 50%;
+	float: right;
+	background: ;
+}
+.MasterClass-section .MasterClass h6{
+	font-size: 22px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Lato-Black';
+	margin-top: 150px;
+	margin-bottom: 50px;
+	text-align: right;
+}
+.MasterClass-section .MasterClass .MasterClass-inner{
+	width: 70%;
+	float: right;
+	background-color: #ffba00;
+	padding: 30px 0px 30px 30px;
+}
+.MasterClass-section .MasterClass .MasterClass-inner h5{
+	font-size: 22px;
+	font-weight: 500;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+}
+.MasterClass-section .MasterClass .MasterClass-inner p{
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+}
+.MasterClass-right{
+	text-align: right;
+	padding-right: 30px;
+}
+.MasterClass-right p{
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+}
+.MasterClass-section .MasterClass .MasterClass-extra{
+	width: 60%;
+	float: right;
+	background-color: #ffba00;
+	margin-top: 40px;
+	padding: 5px 0px 5px 5px;
+}
+.MasterClass-section .MasterClass .MasterClass-extra p{
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 15px;
+}
+/* =============================================
+			End MasterClass-section               
+================================================= */
+
+/* =============================================
+			Start gellery-section              
+================================================= */
+.gellery-section{
+	width: 100%;
+	padding-bottom: 60px;
+	background-color: #242424;
+	background-image: url(../images/gelley-bg.png);
+	background-repeat: no-repeat;
+	background-position: ;
+	background-position-y: 150px;
+	background-size: 100% 45%;
+	color: #fff;
+}
+.gellery-section .gellery{
+	width: 100%;
+}
+.gellery-section .gellery .gellery-title h3{
+	font-size: 30px;
+	font-weight: 700;
+	color: #ffba00;
+	font-family: 'Montserrat-Regular';
+	padding-top: 80px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.gellery-section .gellery .gellery-extra-title h3{
+	font-size: 30px;
+	font-weight: 700;
+	color: #ffba00;
+	font-family: 'Montserrat-Regular';
+	padding-top: 520px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.gellery-section .gellery .gellery-inner{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.gellery-section .gellery .gellery-inner .gellery-left{
+	width: 60%;
+	float: left;
+}
+.gellery-section .gellery .gellery-inner .gellery-left p{
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+}
+.gellery-section .gellery .gellery-inner .gellery-left span{
+	text-align: center;
+}
+.gellery-section .gellery .gellery-inner .gellery-right{
+	width: 40%;
+	float: left;
+}
+.gellery-section .gellery .gellery-inner .gellery-right h6{
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+}
+.gellery-section .gellery .gellery-inner .gellery-right .gellery-right-btn{
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.gellery-section .gellery .gellery-inner .gellery-right .gellery-right-btn i{
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	background: #fff;
+	color: #242424;
+	border-radius: 50%;
+	margin-right: 10px;
+	font-size: 20px;
+	text-align: center;
+}
+.gellery-section .gellery .gellery-inner .gellery-right .gellery-right-btn i:hover{
+	background: #ffba00;
+	color: #fff;
+}
+.gellery-section .gellery .gellery-inner .gellery-right h4{
+	font-size: 25px;
+	font-weight: 500;
+	color: #ffba00;
+	font-family: 'Montserrat-Regular';
+}
+/* =============================================
+			End gellery-section              
+================================================= */
+
+/* =============================================
+			Start footer-section             
+================================================= */
+.footer-section{
+	width: 100%;
+	padding-bottom: 50px;
+	background: #483500;
+}
+.footer-section .footer{
+	width: 100%;
+}
+.footer-section .footer .footer-1st{
+	width: 40%;
+	float: left;
+}
+.footer-section .footer .footer-2nd, .footer-section .footer .footer-3rd, .footer-section .footer .footer-4th{
+	width: 20%;
+	float: left;
+}
+.footer-section .footer .footer-1st h6, .footer-section .footer .footer-2nd h6, .footer-section .footer .footer-3rd h6, .footer-section .footer .footer-4th h6{
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	text-transform: uppercase;
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+.footer-section .footer .footer-1st p{
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	margin-top: 32px;
+}
+.footer-section .footer .footer-2nd a, .footer-section .footer .footer-3rd a, .footer-section .footer .footer-4th a{
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+}
+.footer-section .footer .footer-2nd ul li a span{
+	margin-top: 50px;
+}
+/* =============================================
+			Start footer-section             
+================================================= */
